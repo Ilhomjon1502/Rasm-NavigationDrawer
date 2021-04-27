@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ilhomjon.homework50rasmnavigationdrawer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_popular"
+        android:name="com.ilhomjon.homework50rasmnavigationdrawer.ui.popular.PopularFragment"
+        android:label="@string/popular"
+        tools:layout="@layout/fragment_popular" />
+
+    <fragment
+        android:id="@+id/nav_random"
+        android:name="com.ilhomjon.homework50rasmnavigationdrawer.ui.random.RandomFragment"
+        android:label="@string/random"
+        tools:layout="@layout/fragment_random" />
+    <fragment
+        android:id="@+id/likedFragment"
+        android:name="com.ilhomjon.homework50rasmnavigationdrawer.LikedFragment"
+        android:label="Liked"
+        tools:layout="@layout/fragment_liked" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.ilhomjon.homework50rasmnavigationdrawer.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.ilhomjon.homework50rasmnavigationdrawer.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+</navigation>
